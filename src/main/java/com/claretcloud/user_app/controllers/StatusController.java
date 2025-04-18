@@ -10,6 +10,6 @@ public class StatusController {
 
     @GetMapping("/check")
     public String check() {
-        return "Server up and running";
+        return "<h1 style=\"color: green\">Server up and running</h1>";
     }
 }
