@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.claretcloud</groupId>
 	<artifactId>user-app</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>user-app</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -48,7 +48,30 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.10.1</version> <!-- or later -->
+				<configuration>
+					<release>17</release>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+			<!-- Release repository -->
+		<repository>
+			<id>maven-releases</id>
+			<name>Release Repository</name>
+			<url>http://161.35.174.133:8081/repository/maven-releases/</url>
+		</repository>
+		<!-- Snapshot repository -->
+		<snapshotRepository>
+			<id>maven-snapshots</id>
+			<name>Snapshot Repository</name>
+			<url>http://161.35.174.133:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 </project>
