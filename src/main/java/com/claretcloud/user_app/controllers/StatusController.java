@@ -12,4 +12,9 @@ public class StatusController {
     public String check() {
         return "<h1 style=\"color: green\">Server up and running</h1>";
     }
+
+    @GetMapping("/hello")
+    public String helloWord() {
+        return "<h1 style=\"color: green\">Hello there.</h1>";
+    }
 }
