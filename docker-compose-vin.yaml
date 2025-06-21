@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  user-app:
+    build:
+      context: .
+      dockerfile: Dockerfile-vin
+    ports:
+      - 8085:8085
