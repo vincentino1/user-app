@@ -7,3 +7,5 @@
 `mvn spring-boot:run`
 
 ## This app has default port of 8085
+
+Externl Acess local:<port>/status/check  -----> main/java/controllers/statuscontrollers
