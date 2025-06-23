@@ -8,4 +8,4 @@
 
 ## This app has default port of 8085
 
-Externl Acess local:<port>/status/check  -----> main/java/controllers/statuscontrollers
+Externl Acess localhost:<port>/status/check  -----> main/java/controllers/statuscontrollers
